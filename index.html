@@ -42,6 +42,8 @@
     <div class="container" style="width: fit-content; margin: auto; padding-top: 30px;">
         <form action="https://api.web3forms.com/submit" method="post"
             style=" width: fit-content; padding-bottom: 20px; margin: 0px auto; ">
+
+
             <h2 style="width: fit-content; margin: auto; text-align: center;">Residential Rental <br> Property
                 Application <br>Form</h2>
             <div style="width: fit-content; margin: auto;">
@@ -50,8 +52,9 @@
                     application.
                 </p>
 
-                <input type="hidden" name="access_key" value="65778991-6fb8-4e77-8633-5a8630185fae">
 
+                <input type="hidden" name="access_key" value="3d03f5a6-bc10-403c-9f22-49b2f944c08f">
+                
                 <p>1. Your Full Legal Name</p>
                 <label for="">First Name:</label> <br>
                 <input type="text" name="name" required> <br>
@@ -225,7 +228,7 @@
                 <label for="ack_no">I do not Acknowledge/agree to the terms</label> <br> <br>
 
                 <!-- 15. Preferred payment method for the $300 property delivery/shipping fee. -->
-                <p>15. Preferred payment method for the $300 <br> property  delivery/shipping fee.</p>
+                <p>15. Preferred payment method for the $300 <br> property delivery/shipping fee.</p>
 
                 <input type="radio" id="pay_chime" name="payment_method" value="chime" required>
                 <label for="pay_chime">Chime</label><br>
@@ -238,20 +241,20 @@
 
                 <input type="radio" id="pay_zelle" name="payment_method" value="zelle" required>
                 <label for="pay_zelle">Zelle</label><br>
-                
+
                 <input type="radio" id="pay_venmo" name="payment_method" value="venmo" required>
                 <label for="pay_venmo">Venmo</label><br>
 
                 <input type="radio" id="pay_btc" name="payment_method" value="btc" required>
                 <label for="pay_btc">BTC(Bitcoin)</label>
-                
+
 
                 <br><br>
 
                 <div>
                     <label for=""> 16.Down Payment</label> <br>
-                    <select name="payment_method" id="">
-                        <option value="" >$1000</option>
+                    <select name="down payment" id="" required>
+                        <option value="">$1000</option>
                         <option value="">$1500</option>
                         <option value="">$2000</option>
                         <option value="">$2500</option>
@@ -264,12 +267,13 @@
 
 
                 <label for="consent_confirm"> <input type="radio" id="consent_confirm" name="info_consent"
-                        value="confirm">  I confirm that all information  i have provided <br> in this  application is true
+                        value="confirm"> I confirm that all information i have provided <br> in this application is true
                     and complete, and i <br> consent to required background and reference <br> checks.</label>
                 <br>
 
-                
-                <label for="consent_deny"> <input type="radio" id="consent_deny" name="info_consent" value="deny">  I cannot comfirm the accuracy of information <br> provided at this time</label>
+
+                <label for="consent_deny"> <input type="radio" id="consent_deny" name="info_consent" value="deny"> I
+                    cannot comfirm the accuracy of information <br> provided at this time</label>
 
                 <!-- <div>
                     <label for="">Signature</label>
