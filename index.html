@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Survey</title>
+    <style>
+        input[type="text"] {
+            width: 200px;
+            outline: none;
+            border: 2px groove black;
+        }
+
+
+        input {
+            outline: none;
+            border: 2px groove black;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: medium;
+
+        }
+
+        /* #SignatureCanvas {
+            border: 2px solid #333;
+            border-radius: 8px;
+            background-color: white;
+            width: 400px;
+            height: 150px;
+            touch-action: none;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container" style="width: fit-content; margin: auto; padding-top: 30px;">
+        <form action="https://api.web3forms.com/submit" method="post"
+            style=" width: fit-content; padding-bottom: 20px; margin: 0px auto; ">
+            <h2 style="width: fit-content; margin: auto; text-align: center;">Residential Rental <br> Property
+                Application <br>Form</h2>
+            <div style="width: fit-content; margin: auto;">
+                <p>Thank you for your interest in our rental <br> property. Please fill out this application with <br>
+                    accurate, complete information. All required <br> fields must be completed to process your <br>
+                    application.
+                </p>
+
+                <input type="hidden" name="access_key" value="65778991-6fb8-4e77-8633-5a8630185fae">
+
+                <p>1. Your Full Legal Name</p>
+                <label for="">First Name:</label> <br>
+                <input type="text" name="name" required> <br>
+                <label for="">Last Name:</label> <br>
+                <input type="text">
+
+                <p>2.Your Date of Birth</p>
+                <input type="date">
+                <br><br>
+
+                <label for="">3. Your Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1" required>
+                    <label class="form-check-label" for="radioDefault1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" required>
+                    <label class="form-check-label" for="radioDefault2">
+                        Female
+                    </label>
+
+                </div>
+                <br>
+
+                <label>4.Your Email Address</label> <br>
+                <input type="email" name="email" required> <br> <br>
+
+                <label>5. Your Contact Phone Number</label> <br>
+                <input type="text" name="Phone-number" required> <br> <br>
+
+                <label>6. Your Civil Status </label> <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Single</label>
+                </div> <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Married</label>
+                </div> <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio3">Divorced</label>
+                </div> <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                        value="option4">
+                    <label class="form-check-label" for="inlineRadio4">Widowed</label>
+                </div> <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5"
+                        value="option5">
+                    <label class="form-check-label" for="inlineRadio5">others</label>
+                </div> <br> <br>
+
+                <p>7. Your Current Residential Address</p>
+
+                <label for="">Full Name:</label> <br>
+                <input type="text" name="full-name" required> <br>
+                <label for="">Country/Region:</label> <br>
+                <input type="text" name="Country" required><br>
+                <label for="">Street Address:</label><br>
+                <input type="text" name="street Address" required> <br>
+                <label for=""> Zip/Postal Code:</label><br>
+                <input type="text" name="zip-code" required> <br>
+                <label for="">Contact Number:</label><br>
+                <input type="number" name="Contact-number" required>
+
+
+                <p>8. Full address of where the property <br> will be delivered to</p>
+                <input type="text"> <br>
+                <br><br>
+
+                <label>9. Your Current Employment Status </label> <br>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Full-Time Employed
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                        value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                        Part-Time Employed
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                        value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                        Self-Employed
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                        value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                        Unemployed
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                        value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                        Retired
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                        value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                        Student
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                        value="option3">
+                    <label class="form-check-label" for="exampleRadios3">
+                        others
+                    </label>
+                </div>
+
+
+
+                <p>10. Total Number of Occupants that will <br> reside in the property</p>
+                <input type="number" required>
+                <!-- <select name="Total" id="" required> 
+                <option value="">Choose</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+            </select> -->
+                <br><br>
+                <!-- Question 11 Example -->
+                <p>11. Will any pets be residing in the <br> property with you?</p>
+
+                <input type="radio" id="pet_no" name="pets" value="no">
+                <label for="pet_no">No</label><br>
+
+                <input type="radio" id="pet_one" name="pets" value="1_pet">
+                <label for="pet_one">Yes, 1 pet</label><br>
+
+                <input type="radio" id="pet_multiple" name="pets" value="2_or_more_pets">
+                <label for="pet_multiple">Yes, 2 or more pets</label>
+
+                <p>12. Preferred date of where the property <br> should be delivered</p>
+                <input type="date"> <br><br>
+
+                <p>13. Preferred time for the property <br> to be delivered.</p>
+                <input type="time" name="time" required> <br><br>
+
+                <!-- 14. Acknowledgment of required shipping fee -->
+                <label>14. Acknowledgment of required shipping fee</label> <br> <br>
+
+                <label for="ack_yes"> <input type="radio" id="ack_yes" name="shipping_ack" value="agree"> I Acknowledge
+                    to the shipping deposit <br>requirement and agree to the terms .</label>
+                <br>
+
+                <input type="radio" id="ack_no" name="shipping_ack" value="disagree">
+                <label for="ack_no">I do not Acknowledge/agree to the terms</label> <br> <br>
+
+                <!-- 15. Preferred payment method for the $300 property delivery/shipping fee. -->
+                <p>15. Preferred payment method for the $300 <br> property  delivery/shipping fee.</p>
+
+                <input type="radio" id="pay_chime" name="payment_method" value="chime" required>
+                <label for="pay_chime">Chime</label><br>
+
+                <input type="radio" id="pay_cashapp" name="payment_method" value="cashapp" required>
+                <label for="pay_cashapp">Cashapp</label><br>
+
+                <input type="radio" id="pay_applepay" name="payment_method" value="apple_pay" required>
+                <label for="pay_applepay">Apple Pay</label><br>
+
+                <input type="radio" id="pay_zelle" name="payment_method" value="zelle" required>
+                <label for="pay_zelle">Zelle</label><br>
+                
+                <input type="radio" id="pay_venmo" name="payment_method" value="venmo" required>
+                <label for="pay_venmo">Venmo</label><br>
+
+                <input type="radio" id="pay_btc" name="payment_method" value="btc" required>
+                <label for="pay_btc">BTC(Bitcoin)</label>
+                
+
+                <br><br>
+
+                <div>
+                    <label for=""> 16.Down Payment</label> <br>
+                    <select name="payment_method" id="">
+                        <option value="" >$1000</option>
+                        <option value="">$1500</option>
+                        <option value="">$2000</option>
+                        <option value="">$2500</option>
+                        <option value="">$3000</option>
+                    </select>
+                </div>
+                <!-- 16. Consent of Accuracy of Provided Information -->
+                <p>17. Consent of Accuracy of Provided Information</p>
+
+
+
+                <label for="consent_confirm"> <input type="radio" id="consent_confirm" name="info_consent"
+                        value="confirm">  I confirm that all information  i have provided <br> in this  application is true
+                    and complete, and i <br> consent to required background and reference <br> checks.</label>
+                <br>
+
+                
+                <label for="consent_deny"> <input type="radio" id="consent_deny" name="info_consent" value="deny">  I cannot comfirm the accuracy of information <br> provided at this time</label>
+
+                <!-- <div>
+                    <label for="">Signature</label>
+                    <canvas id="SignatureCanvas" width="400px" height="150px"></canvas>
+                    <br>
+                    <button type="reset">Clear</button>
+                </div> -->
+                <div>
+
+                </div>
+
+                <div>
+                    <label for="signature">18. Applicant Signature:</label><br>
+
+                    <canvas id="signature" width="300" height="200"
+                        style="border: 1px solid #ccc; border-radius: 8px; cursor: crosshair;">
+                    </canvas>
+                </div>
+                <br>
+
+                <button type="button" id="clearSignature">Clear</button>
+
+                <input type="hidden" name="signature" id="signatureData" required>
+
+
+
+                <br><br><button type="submit"
+                    style=" margin-left: 20px; border: none; height: 60px; background-color: greenyellow; width: 260px;">Submit</button>
+
+            </div>
+
+        </form>
+    </div>
+    <script>
+        const canvas = document.getElementById("signature");
+        const ctx = canvas.getContext("2d");
+        const signatureData = document.getElementById("signatureData");
+
+        let drawing = false;
+
+        ctx.lineWidth = 2;
+        ctx.lineCap = "round";
+        ctx.strokeStyle = "#000";
+
+        function getPosition(e) {
+            const rect = canvas.getBoundingClientRect();
+
+            if (e.touches) {
+                return {
+                    x: e.touches[0].clientX - rect.left,
+                    y: e.touches[0].clientY - rect.top
+                };
+            }
+
+            return {
+                x: e.clientX - rect.left,
+                y: e.clientY - rect.top
+            };
+        }
+
+        function startDrawing(e) {
+            drawing = true;
+            const pos = getPosition(e);
+
+            ctx.beginPath();
+            ctx.moveTo(pos.x, pos.y);
+        }
+
+        function draw(e) {
+            if (!drawing) return;
+
+            e.preventDefault();
+
+            const pos = getPosition(e);
+
+            ctx.lineTo(pos.x, pos.y);
+            ctx.stroke();
+        }
+
+        function stopDrawing() {
+            if (!drawing) return;
+
+            drawing = false;
+
+            // Save signature as an image
+            signatureData.value = canvas.toDataURL("image/png");
+        }
+
+        canvas.addEventListener("mousedown", startDrawing);
+        canvas.addEventListener("mousemove", draw);
+        canvas.addEventListener("mouseup", stopDrawing);
+        canvas.addEventListener("mouseleave", stopDrawing);
+
+        canvas.addEventListener("touchstart", startDrawing);
+        canvas.addEventListener("touchmove", draw);
+        canvas.addEventListener("touchend", stopDrawing);
+
+        document.getElementById("clearSignature").addEventListener("click", () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            signatureData.value = "";
+        });
+    </script>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
